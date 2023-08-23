@@ -13,6 +13,9 @@ class ProductPageLocators():
     BUSKET_BUTTON = (By.CSS_SELECTOR, '.btn-add-to-basket')
     SUCCESS_MESSAGE = (By.CSS_SELECTOR,'.alert-success:nth-child(1)')
     PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
+    PRODUCT_NAME_IN_MESSAGE = (By.CSS_SELECTOR, '.alert-success:nth-child(1) div.alertinner strong')
+    PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main .price_color')
+    PRODUCT_PRICE_IN_MESSAGE = (By.CSS_SELECTOR, '.alert-info div.alertinner p strong')
    
 
 
