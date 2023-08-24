@@ -9,7 +9,6 @@ class LoginPage(BasePage):
         self.browser.find_element(*LoginPageLocators.CONFIRM_PASSWORD_FIELD_REGISTRATION).send_keys(password)
         self.browser.find_element(*LoginPageLocators.REGISTRATION_BUTTON).click()
         self.should_be_authorized_user()
-
         
     def should_be_login_page(self):
         self.should_be_login_url()
