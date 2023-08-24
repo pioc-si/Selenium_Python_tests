@@ -8,12 +8,17 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.ID, 'login_form')
     REGISTRATION_FORM = (By.ID, 'register_form')
+    EMAIL_FIELD_REGISTRATION = (By.ID, 'id_registration-email')
+    PASSWORD_FIELD_REGISTRATION = (By.ID, 'id_registration-password1')
+    CONFIRM_PASSWORD_FIELD_REGISTRATION = (By.ID, 'id_registration-password2')
+    REGISTRATION_BUTTON = (By.NAME, 'registration_submit')
 
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, '#login_link')
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, '#login_link_inc')  
     BASKET_lINK = (By.CSS_SELECTOR, 'span a')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class BasketPageLocators():
