@@ -9,6 +9,17 @@ class LoginPageLocators():
     LOGIN_FORM = (By.ID, 'login_form')
     REGISTRATION_FORM = (By.ID, 'register_form')
 
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, '#login_link')
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, '#login_link_inc')  
+    BASKET_lINK = (By.CSS_SELECTOR, 'span a')
+
+
+class BasketPageLocators():
+    EMPTY_BASKET = (By.CSS_SELECTOR, '#content_inner p')
+
+
 class ProductPageLocators():
     BUSKET_BUTTON = (By.CSS_SELECTOR, '.btn-add-to-basket')
     SUCCESS_MESSAGE = (By.CSS_SELECTOR,'.alert-success:nth-child(1)')
